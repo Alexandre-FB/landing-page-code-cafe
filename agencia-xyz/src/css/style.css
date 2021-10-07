@@ -22,7 +22,26 @@ body {
 
 .header {
     grid-area: header;
-    background-color: blue;
+    
+}
+
+.header .header-container
+ {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    min-height: 75px;
+}
+
+.header .logo {
+    font-weight: 700;
+    font-size: 3rem;
+    transition: 0.2s;
+}
+
+.header .link-logo:hover .logo{
+    color: coral;
 }
 
 /* HERO */
