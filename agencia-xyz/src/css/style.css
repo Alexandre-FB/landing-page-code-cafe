@@ -48,7 +48,47 @@ body {
 
 .hero {
     grid-area: hero;
-    background-color: blueviolet;
+    height: 86vh;
+    background: url('../images/lemons.jpg') center 60% no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.hero .titulo {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.hero:after {
+    content: url('../images/seta_preta.png');
+    position: absolute;
+    height: 35px;
+    bottom: 40px;
+    animation: pulando 0.6s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes pulando {
+    0% {
+        -webkit-transform: translateY(0); opacity: 0.4;
+    }
+    100% {
+        -webkit-transform: translateY(0.7rem); opacity: 0.8;
+    }
+}
+
+@media(max-width: 500px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero .titulo {
+        font-size: 2.5rem;
+    }
 }
 
 /* ABOUT */
